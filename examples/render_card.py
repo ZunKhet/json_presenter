@@ -2,7 +2,6 @@ from pathlib import Path
 
 from json_presenter import Presenter, ThemeType, ViewType
 
-
 input_path = Path("examples/data/person.json")
 output_path = Path("examples/output/card_winter.html")
 

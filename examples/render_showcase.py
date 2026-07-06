@@ -2,7 +2,6 @@ from pathlib import Path
 
 from json_presenter import Presenter, ThemeType, ViewType
 
-
 DATASETS = [
     ("person", ThemeType.WINTER),
     ("company", ThemeType.SPRING),

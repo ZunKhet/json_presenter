@@ -2,7 +2,6 @@ from pathlib import Path
 
 from json_presenter import Presenter, ThemeType, ViewType
 
-
 input_path = Path("examples/data/nested.json")
 output_path = Path("examples/output/tree_dark.html")
 

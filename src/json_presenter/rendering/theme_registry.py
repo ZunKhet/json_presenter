@@ -39,5 +39,4 @@ class ThemeRegistry:
         try:
             return self._registry[theme_type]
         except KeyError as exc:
-            raise UnknownThemeError(
-                f"Unknown theme type: {theme_type}") from exc
+            raise UnknownThemeError(f"Unknown theme type: {theme_type}") from exc

@@ -86,35 +86,3 @@ def test_presenter_render_with_missing_root_key_raises_error():
             view=ViewType.CARDS,
             root_key="missing",
         )
-
-
-def test_presenter_render_with_root_key():
-    presenter = Presenter.from_object(
-        {
-            "team": [
-                {"name": "Alice", "role": "Engineer"},
-                {"name": "Bob", "role": "Designer"},
-            ]
-        }
-    )
-
-    html = presenter.render(
-        view=ViewType.CARDS,
-        theme=ThemeType.WINTER,
-        root_key="team",
-    )
-
-    assert "JSON Collection" in html.html
-    assert "Alice" in html.html
-    assert "Bob" in html.html
-    assert "team" not in html.html
-
-
-def test_presenter_render_with_missing_root_key_raises_error():
-    presenter = Presenter.from_object({"project": {"name": "json_presenter"}})
-
-    with pytest.raises(KeyError):
-        presenter.render(
-            view=ViewType.CARDS,
-            root_key="missing",
-        )

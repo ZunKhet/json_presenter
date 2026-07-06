@@ -48,8 +48,7 @@ class RenderEngine:
 
     def _select_root(self, data: Any, root_key: str) -> Any:
         if not isinstance(data, dict):
-            raise KeyError(
-                f"Cannot select root key '{root_key}' from non-object JSON.")
+            raise KeyError(f"Cannot select root key '{root_key}' from non-object JSON.")
 
         if root_key not in data:
             raise KeyError(f"Root key not found: {root_key}")

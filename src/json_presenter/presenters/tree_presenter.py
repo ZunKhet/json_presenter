@@ -30,8 +30,7 @@ class TreePresenter(BasePresenter):
 
         if isinstance(value, list):
             children = [
-                self._build_tree(f"[{index}]", item)
-                for index, item in enumerate(value)
+                self._build_tree(f"[{index}]", item) for index, item in enumerate(value)
             ]
 
             return TreeNode(

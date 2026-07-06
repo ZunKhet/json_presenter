@@ -23,9 +23,7 @@ def format_value(value: object) -> FormattedValue:
     if isinstance(value, bool):
         text = "Yes" if value else "No"
         symbol = "✓" if value else "✕"
-        return FormattedValue(
-            f'<span class="jp-value-boolean">{symbol} {text}</span>'
-        )
+        return FormattedValue(f'<span class="jp-value-boolean">{symbol} {text}</span>')
 
     text = str(value)
 

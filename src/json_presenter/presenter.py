@@ -7,10 +7,13 @@ from typing import Any
 from json_presenter.analyzer import StructureAnalyzer
 from json_presenter.enums import ThemeType, ViewType
 from json_presenter.exceptions import InvalidJsonError
-from json_presenter.models import AnalysisResult, ViewRecommendation
+from json_presenter.models import (
+    AnalysisResult,
+    RenderedPresentation,
+    ViewRecommendation,
+)
 from json_presenter.recommenders import ViewRecommender
 from json_presenter.rendering import RenderEngine
-from json_presenter.models import AnalysisResult, RenderedPresentation, ViewRecommendation
 
 
 class Presenter:
@@ -63,7 +66,7 @@ class Presenter:
         view: ViewType,
         theme: ThemeType = ThemeType.MINIMAL,
         root_key: str | None = None,
-    ) -> RenderPresentation:
+    ) -> RenderedPresentation:
         return self._render_engine.render(
             data=self._data,
             view=view,

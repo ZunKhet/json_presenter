@@ -18,8 +18,7 @@ class HtmlRenderer:
 
     def render(self, document: PresentationDocument) -> str:
         header_html = self._render_document_header(document)
-        nodes_html = "\n".join(self._render_node(node)
-                               for node in document.nodes)
+        nodes_html = "\n".join(self._render_node(node) for node in document.nodes)
 
         return f"""
         {header_html}
@@ -59,12 +58,10 @@ class HtmlRenderer:
         if isinstance(node, TreeNode):
             return self._render_tree(node)
 
-        raise TypeError(
-            f"Unsupported presentation node: {type(node).__name__}")
+        raise TypeError(f"Unsupported presentation node: {type(node).__name__}")
 
     def _render_card(self, node: CardNode) -> str:
-        fields_html = "\n".join(self._render_card_field(field)
-                                for field in node.fields)
+        fields_html = "\n".join(self._render_card_field(field) for field in node.fields)
 
         return f"""
         <section class="jp-card">
@@ -117,8 +114,9 @@ class HtmlRenderer:
         """
 
     def _render_collection_field(self, field: CollectionField) -> str:
-        items_html = "\n".join(self._render_collection_item(item)
-                               for item in field.items)
+        items_html = "\n".join(
+            self._render_collection_item(item) for item in field.items
+        )
         item_count = len(field.items)
         item_label = self._get_collection_item_label(field)
 
@@ -196,8 +194,7 @@ class HtmlRenderer:
         """
 
     def _render_tree(self, node: TreeNode) -> str:
-        children_html = "\n".join(self._render_tree(child)
-                                  for child in node.children)
+        children_html = "\n".join(self._render_tree(child) for child in node.children)
 
         if children_html:
             return f"""

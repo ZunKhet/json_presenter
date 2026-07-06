@@ -193,14 +193,16 @@ def test_html_renderer_renders_collection_field_as_disclosure():
                                     title="Alice",
                                     fields=[
                                         PrimitiveField(
-                                            label="Role", content="Engineer"),
+                                            label="Role", content="Engineer"
+                                        ),
                                     ],
                                 ),
                                 CardNode(
                                     title="Bob",
                                     fields=[
                                         PrimitiveField(
-                                            label="Role", content="Designer"),
+                                            label="Role", content="Designer"
+                                        ),
                                     ],
                                 ),
                             ],
