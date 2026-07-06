@@ -3,21 +3,22 @@ name = "json_presenter"
 version = "0.1.0"
 description = "Transform JSON into meaningful, beautiful, downloadable presentation views."
 readme = "README.md"
+requires-python = ">=3.10"
 license = { file = "LICENSE" }
 
 authors = [
     { name = "Zun Khet Wai" }
 ]
 
-requires-python = ">=3.10"
-
 keywords = [
     "json",
     "html",
-    "visualization",
     "presentation",
+    "visualization",
     "renderer"
 ]
 
-[tool.black]
-target-version = ["py314"]
+[project.urls]
+Homepage = "https://github.com/ZunKhet/json_presenter"
+Repository = "https://github.com/ZunKhet/json_presenter"
+Issues = "https://github.com/ZunKhet/json_presenter/issues"
