@@ -16,7 +16,7 @@ Contributions of all sizes are welcome, including:
 Clone the repository:
 
 ```bash
-git clone https://github.com/<your-username>/json_presenter.git
+git clone https://github.com/ZunKhet/json_presenter.git
 ```
 
 Install the project:
