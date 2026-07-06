@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Alice Tanaka",
+        "role": "Machine Learning Engineer",
+        "country": "Japan"
+    },
+    {
+        "name": "Bob Smith",
+        "role": "Data Scientist",
+        "country": "Canada"
+    },
+    {
+        "name": "Maya Chen",
+        "role": "AI Researcher",
+        "country": "Singapore"
+    }
+]

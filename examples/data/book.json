@@ -1,0 +1,23 @@
+{
+    "title": "Designing Data-Driven Applications",
+    "author": "Maya Chen",
+    "published_at": "2024-09-15",
+    "available": true,
+    "rating": 4.8,
+    "summary": "A practical guide to designing applications that transform raw data into meaningful user experiences.",
+    "publisher": {
+        "name": "Northstar Press",
+        "country": "Canada"
+    },
+    "chapters": [
+        "Understanding Data",
+        "Designing Interfaces",
+        "Rendering Information",
+        "Exporting Results"
+    ],
+    "metadata": {
+        "isbn": "978-1-23456-789-0",
+        "pages": 328,
+        "language": "English"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "name": "Nova Robotics",
+    "industry": "Robotics and Artificial Intelligence",
+    "founded_year": 2018,
+    "is_active": true,
+    "website": "https://example.com",
+    "headquarters": {
+        "city": "Singapore",
+        "country": "Singapore",
+        "address": {
+            "street": "12 Innovation Road",
+            "postal_code": "138000"
+        }
+    },
+    "departments": [
+        {
+            "name": "Research",
+            "employees": 24,
+            "focus": "Humanoid robot perception"
+        },
+        {
+            "name": "Product",
+            "employees": 16,
+            "focus": "Service robot deployment"
+        }
+    ],
+    "tags": ["robotics", "AI", "computer vision", "automation"]
+}

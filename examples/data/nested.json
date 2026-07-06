@@ -1,0 +1,16 @@
+{
+    "project": {
+        "name": "json_presenter",
+        "version": "0.1.0",
+        "goals": [
+            "analyze JSON",
+            "recommend views",
+            "render beautiful HTML"
+        ],
+        "views": {
+            "tree": true,
+            "table": true,
+            "cards": true
+        }
+    }
+}

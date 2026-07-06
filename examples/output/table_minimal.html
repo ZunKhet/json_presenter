@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>json_presenter output</title>
+    <style>
+
+
+:root {
+    --jp-bg: #f3fff3;
+    --jp-surface: #ffffff;
+    --jp-surface-soft: #ecfdf3;
+    --jp-text: #2f4f2f;
+    --jp-title: #183b1f;
+    --jp-muted: #5f7f62;
+    --jp-border: #cfe8cf;
+    --jp-font-family: Arial, sans-serif;
+    --jp-radius: 18px;
+    --jp-shadow: 0 10px 28px rgba(47, 79, 47, 0.12);
+
+    --jp-space-sm: 0.5rem;
+    --jp-space-md: 1rem;
+    --jp-space-lg: 1.5rem;
+    --jp-space-xl: 2.5rem;
+}
+
+
+
+.jp-root {
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: var(--jp-space-xl);
+    font-family: var(--jp-font-family);
+    color: var(--jp-text);
+    background: var(--jp-bg);
+}
+
+.jp-document-header {
+    max-width: 960px;
+    margin: 0 auto var(--jp-space-xl);
+}
+
+.jp-document-title {
+    margin: 0;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    color: var(--jp-title);
+}
+
+.jp-document-subtitle {
+    margin: var(--jp-space-sm) 0 0;
+    font-size: 1rem;
+    color: var(--jp-muted);
+}
+
+.jp-document-description {
+    margin: var(--jp-space-md) 0 0;
+    max-width: 720px;
+    line-height: 1.6;
+    color: var(--jp-text);
+}
+
+.jp-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.jp-card {
+    border: 1px solid var(--jp-border);
+    border-radius: var(--jp-radius);
+    background: var(--jp-surface);
+    box-shadow: var(--jp-shadow);
+    overflow: hidden;
+}
+
+.jp-card-title {
+    margin: 0;
+    padding: var(--jp-space-lg);
+    font-size: 1.25rem;
+    color: var(--jp-title);
+    border-bottom: 1px solid var(--jp-border);
+}
+
+.jp-card-fields {
+    display: grid;
+}
+
+.jp-card-field {
+    display: grid;
+    grid-template-columns: minmax(120px, 220px) 1fr;
+    gap: var(--jp-space-md);
+    padding: var(--jp-space-md) var(--jp-space-lg);
+    border-bottom: 1px solid var(--jp-border);
+}
+
+.jp-card-field:last-child {
+    border-bottom: none;
+}
+
+.jp-card-key {
+    font-weight: 700;
+    color: var(--jp-muted);
+}
+
+.jp-card-value {
+    color: var(--jp-text);
+    overflow-wrap: anywhere;
+}
+
+.jp-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--jp-border);
+    border-radius: var(--jp-radius);
+    background: var(--jp-surface);
+    box-shadow: var(--jp-shadow);
+    overflow: hidden;
+}
+
+.jp-table th,
+.jp-table td {
+    padding: var(--jp-space-md);
+    border-bottom: 1px solid var(--jp-border);
+    text-align: left;
+}
+
+.jp-table th {
+    color: var(--jp-title);
+    background: var(--jp-surface-soft);
+}
+
+.jp-table tr:last-child td {
+    border-bottom: none;
+}
+
+.jp-tree {
+    margin: var(--jp-space-sm) 0 0 var(--jp-space-lg);
+    padding-left: var(--jp-space-md);
+    border-left: 1px solid var(--jp-border);
+}
+
+.jp-tree li {
+    margin: var(--jp-space-sm) 0;
+}
+
+.jp-tree-label {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: calc(var(--jp-radius) / 2);
+    background: var(--jp-surface-soft);
+    color: var(--jp-text);
+}
+
+
+    </style>
+</head>
+<body>
+    <main class="jp-root">
+
+        
+        <header class="jp-document-header">
+            <h1 class="jp-document-title">JSON Presentation</h1>
+            
+            
+        </header>
+        
+        <section class="jp-content">
+            
+        <table class="jp-table">
+            <thead>
+                <tr>
+                    <th>name</th>
+<th>role</th>
+<th>country</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+        <tr>
+            <td>Alice Tanaka</td>
+<td>Machine Learning Engineer</td>
+<td>Japan</td>
+        </tr>
+        
+
+        <tr>
+            <td>Bob Smith</td>
+<td>Data Scientist</td>
+<td>Canada</td>
+        </tr>
+        
+
+        <tr>
+            <td>Maya Chen</td>
+<td>AI Researcher</td>
+<td>Singapore</td>
+        </tr>
+        
+            </tbody>
+        </table>
+        
+        </section>
+        
+    </main>
+</body>
+</html>

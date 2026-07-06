@@ -1,0 +1,30 @@
+{
+    "location": "Bangkok",
+    "country": "Thailand",
+    "updated_at": "2026-07-06T17:45:00+07:00",
+    "temperature_c": 31.5,
+    "condition": "Cloudy",
+    "humidity_percent": 74,
+    "rain_expected": true,
+    "forecast": [
+        {
+            "day": "Tuesday",
+            "high_c": 33,
+            "low_c": 27,
+            "condition": "Thunderstorms"
+        },
+        {
+            "day": "Wednesday",
+            "high_c": 32,
+            "low_c": 26,
+            "condition": "Rain"
+        },
+        {
+            "day": "Thursday",
+            "high_c": 34,
+            "low_c": 27,
+            "condition": "Partly cloudy"
+        }
+    ],
+    "alerts": null
+}

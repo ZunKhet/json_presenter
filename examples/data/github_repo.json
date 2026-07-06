@@ -1,0 +1,20 @@
+{
+    "name": "json_presenter",
+    "description": "Transform JSON into meaningful, beautiful, downloadable presentation views.",
+    "url": "https://github.com/example/json_presenter",
+    "language": "Python",
+    "stars": 128,
+    "forks": 14,
+    "open_issues": 6,
+    "is_private": false,
+    "created_at": "2026-07-01T10:30:00Z",
+    "topics": ["json", "presentation", "html", "python"],
+    "owner": {
+        "username": "zunkhet",
+        "profile_url": "https://github.com/zunkhet"
+    },
+    "latest_release": {
+        "version": "0.1.0-alpha",
+        "published_at": "2026-07-06T18:00:00Z"
+    }
+}

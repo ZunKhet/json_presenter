@@ -1,0 +1,26 @@
+{
+    "name": "Japan",
+    "capital": "Tokyo",
+    "region": "East Asia",
+    "population": 123900000,
+    "currency": {
+        "name": "Japanese Yen",
+        "code": "JPY",
+        "symbol": "¥"
+    },
+    "languages": ["Japanese"],
+    "major_cities": [
+        {
+            "name": "Tokyo",
+            "population": 14000000
+        },
+        {
+            "name": "Osaka",
+            "population": 2700000
+        },
+        {
+            "name": "Kyoto",
+            "population": 1460000
+        }
+    ]
+}

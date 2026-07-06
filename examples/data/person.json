@@ -1,0 +1,16 @@
+{
+    "name": "Alice Tanaka",
+    "role": "Machine Learning Engineer",
+    "country": "Japan",
+    "experience_years": 4,
+    "specialty": "Computer Vision",
+    "skills": ["Python", "AI", "Computer Vision"],
+    "profile": {
+        "city": "Tokyo",
+        "level": "Senior",
+        "department": {
+            "name": "Research",
+            "focus": "Vision Models"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "status": "success",
+    "request_id": "req_20260706_001",
+    "cached": false,
+    "data": {
+        "count": 3,
+        "items": [
+            {
+                "id": 1,
+                "name": "Entropy Explorer",
+                "type": "educational app",
+                "active": true
+            },
+            {
+                "id": 2,
+                "name": "EchoGate AI",
+                "type": "story app",
+                "active": true
+            },
+            {
+                "id": 3,
+                "name": "Prism256",
+                "type": "dataset inspection tool",
+                "active": false
+            }
+        ]
+    },
+    "errors": [],
+    "next_url": null
+}
